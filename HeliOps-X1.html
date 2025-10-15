@@ -1,0 +1,780 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>HeliOps-X1</title>
+  <link href="" rel="icon">
+  <link href="" rel="apple-touch-icon">
+
+  <link href="https://fonts.googleapis.com/css?family=Oswald:700|PT+Sans&display=swap" rel="stylesheet">
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/product_style.css" rel="stylesheet">
+
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+  <!-- Font -->
+  <link href="https://fonts.cdnfonts.com/css/airborne-86" rel="stylesheet">
+  <link href="https://fonts.cdnfonts.com/css/nodulus" rel="stylesheet">
+  <link href="https://fonts.cdnfonts.com/css/renegado" rel="stylesheet">
+  <link href="https://fonts.cdnfonts.com/css/zerpixl-volt" rel="stylesheet">
+  <link href="https://fonts.cdnfonts.com/css/nostromo" rel="stylesheet">
+  <link href="https://fonts.cdnfonts.com/css/modern-age" rel="stylesheet">
+  <link href="https://fonts.cdnfonts.com/css/mechfire" rel="stylesheet">
+
+</head>
+
+<body>
+
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="/" class="logo">
+        <img src="/assets/logo.png" alt="Logo">
+      </a>
+      <div class="hamburger" id="hamburger">
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+      </div>
+    </div>
+    <ul class="nav-links" id="nav-menu">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="HeliOps-X2.html">HeliOps-X2</a></li>
+      <li><a href="HeliSimule-XR.html">HeliSimule-XR</a></li>
+      <li><a href="HeliHyper-XSI.html">HeliHyper-XSI</a></li>
+      <li><a href="HeliOps-XAD.html">HeliOps-XAD</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="hero">
+    <div class="texture"></div>
+    <video class="parallax-video" muted autoplay loop preload="auto">
+      <source src="/assets/HeliOps-X1_vid.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <div class="caption">
+      <h1>
+        <span>H</span><span>E</span><span>L</span><span>I</span><span>O</span><span>P</span><span>S</span><span>-</span><span>X</span><span>1</span>
+      </h1>
+    </div>
+  </section>
+
+<!-- About -->
+
+<div class="heliops-text" >
+  <h1 data-aos="fade-up" data-aos-duration="1000">Decision Dominance from Space to Battle Ground</h1>
+</div>
+
+  <section class="heliops-x1-scroll">
+    <div>
+      <video class="heliops-video" autoplay loop muted playsinline>
+        <source src="assets/X1Promo.mp4" type="video/mp4">
+        Your browser does not support this video.
+      </video>
+    </div>
+  </section>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js"></script>
+  <script>
+    gsap.registerPlugin(ScrollTrigger);
+
+    gsap.to(".heliops-x1-scroll video", {
+      clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
+      width: "100vw",
+      height: "100vh",
+      ease: "none",
+      scrollTrigger: {
+        trigger: ".heliops-x1-scroll",
+        start: "top center",
+        end: "center center",
+        scrub: true
+      }
+    });
+  </script>
+
+<!-- Problem Section -->
+<div class="heliops-text" >
+  <h1 data-aos="fade-up" data-aos-duration="1000">Problem Statement</h1>
+   <p data-aos="fade-up" data-aos-duration="1200">Our soldiers operate in rapidly changing environments where comms/GPS is often denied and
+reliance of perfect networks is uncertain.<br> Absence of Real Time Situational Awareness Systems during Combat Missions.</p>
+</div>
+
+<!-- Solution Section -->
+<div class="heliops-text" >
+  <h1 data-aos="fade-up" data-aos-duration="1000">Solution</h1>
+  <p data-aos="fade-up" data-aos-duration="1200">A Drone/UAS with controller and a Mobile Receiver Device with HeliOps-X1 as a AI software equiped as a gear by each Men into Ops!!<br>The efficiency of rapid decision-making with real-time
+data allows for accuracy and increased situational awareness.</p>
+</div>
+
+<!--Logo X1  -->
+<section class="heliops-text">
+ <img src="/assets/LogoX1.png" alt="Logo">
+</section>
+
+<!-- Capability Section -->
+<section class="heliops-text">
+<h1 data-aos="fade-up" data-aos-duration="1000">Capabilities</h1>
+</section>
+
+  <!-- Feature Section -->
+
+  <section class="feature-section">
+  
+    <!-- Feature Set 1 -->
+    <div class="feature-set">
+      <!-- Left heading -->
+      <div class="feature-left">
+        <p>| 01</p>
+        <h2>Real-Time 2D Mapping</h2>
+      </div>
+  
+      <!-- Right content -->
+      <div class="feature-right">
+        <div class="feature-intro">
+          <p>Generate instant 2D maps with drone footage in real time — from broad operational views to detailed terrain models. With HeliOps-X1, operators with UAS and mobile devices access on-demand intelligence across the full range of the UAS, eliminating reliance on larger ISR platforms. Live drone and sensor data deliver tactical clarity, enabling instant situational awareness, route planning, and adaptive decision-making — even in signal-denied environments.</p>
+        </div>
+        <div class="feature-tabs">
+          <div class="feature-tab active" data-target="video">Video</div>
+          <div class="feature-tab" data-target="details">Details</div>
+        </div>
+        <div class="feature-card">
+          <video class="feature-video" autoplay loop muted playsinline>
+            <source src="assets/2DX1.mp4" type="video/mp4">
+          </video>
+          <div class="feature-details">
+            <p><h2> About the tool</h2>Operators on the tactical edge, in signal-denied environments,
+often use UAS for operational ISR. With HeliOps-X1, operators
+equipped with UAS and a mobile device can launch and
+immediately access on-demand intelligence with as much
+range as the UAS allows. This eliminates dependencies on
+larger ISR platforms and increased situational awareness.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Feature Set 2 -->
+    <div class="feature-set">
+      <div class="feature-left">
+        <p>| 02</p>
+        <h2>Near real-time 3D Mapping</h2>
+      </div>
+      <div class="feature-right">
+        <div class="feature-intro">
+          <p>Generate instant 3D maps with drone footage in real time — from broad operational views to detailed terrain models.</p>
+        </div>
+        <div class="feature-tabs">
+          <div class="feature-tab active" data-target="video">Video</div>
+          <div class="feature-tab" data-target="details">Details</div>
+        </div>
+        <div class="feature-card">
+          <video class="feature-video" autoplay loop muted playsinline>
+            <source src="assets/3DX1.mp4" type="video/mp4">
+          </video>
+          <div class="feature-details">
+            <p>HeliOps-X1 gives operators near real-time 3D (NRT3D)
+mapping capabilities in the palm of their hands. Models are
+available to the users in as little as 2 minutes. Accurate 3D
+mapping helps to streamline mission planning.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Feature Set 3 -->
+    <div class="feature-set">
+      <div class="feature-left">
+        <p>| 03</p>
+        <h2>Line Of Sight</h2>
+      </div>
+      <div class="feature-right">
+        <div class="feature-intro">
+          <p>Line of sight tools uncover exposure risks and tactical sightlines that save lives, expose threats, and guide positioning.</p>
+        </div>
+        <div class="feature-tabs">
+          <div class="feature-tab active" data-target="video">Video</div>
+          <div class="feature-tab" data-target="details">Details</div>
+        </div>
+        <div class="feature-card">
+          <video class="feature-video" autoplay loop muted playsinline>
+            <source src="assets/LOSX1.mp4" type="video/mp4">
+          </video>
+          <div class="feature-details">
+            <p>Once 3D Modeling of an AOI is achieved, users can utilize
+HeliOps-X1’s line of sight (LOS) tool to quickly understand
+vantage points. Whether using LOS to avoid detection on a
+reconnaissance mission or to specifically plan a diversion,
+HeliOps-X1 allows the tactical teams to be more creative on the
+battlefield.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Feature Set 4 -->
+    <div class="feature-set">
+      <div class="feature-left">
+        <p>| 04</p>
+        <h2>AI Based Routing</h2>
+      </div>
+      <div class="feature-right">
+        <div class="feature-intro">
+          <p>HeliOps-X1's AI Route Planning tool intelligently suggests the
+most advantageous path from Point A to Point B. Routes are
+suggested based on maximum and minimum slope of terrain.</p>
+        </div>
+        <div class="feature-tabs">
+          <div class="feature-tab active" data-target="video">Video</div>
+          <div class="feature-tab" data-target="details">Details</div>
+        </div>
+        <div class="feature-card">
+          <video class="feature-video" autoplay loop muted playsinline>
+            <source src="assets/ROUTEX1.mp4" type="video/mp4">
+          </video>
+          <div class="feature-details">
+            <p>Once 3D model has been processed, users can drop routes,
+phase lines, and other maneuver mechanics right into the
+model. Operators can assess and then push planned routes into
+Ops devices. With LOS analysis, the route will be evaluated for
+enemy awareness, giving team leads the information necessary
+to move covertly through the battlefield.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+     <!-- Feature Set 5 -->
+    <div class="feature-set">
+      <div class="feature-left">
+        <p>| 05</p>
+        <h2>HLZ Surveying</h2>
+      </div>
+      <div class="feature-right">
+        <div class="feature-intro">
+          <p>HeliOps-X1's AI Route Planning tool intelligently suggests the
+most advantageous path from Point A to Point B. Routes are
+suggested based on maximum and minimum slope of terrain.</p>
+        </div>
+        <div class="feature-tabs">
+          <div class="feature-tab active" data-target="video">Video</div>
+          <div class="feature-tab" data-target="details">Details</div>
+        </div>
+        <div class="feature-card">
+          <video class="feature-video" autoplay loop muted playsinline>
+            <source src="assets/HLZX1.mp4" type="video/mp4">
+          </video>
+          <div class="feature-details">
+            <p>Instead of sending teams forward for reconnaissance, HeliOps-X1 allows users to conduct Helicopter Landing Zone(HLZ) surveys, record grid information, and transfer to air assets via ATAK in real time. HeliOps-X1 considers doctrinal limits and airframe capabilities to suggest HLZ locations. Users can input the required landing zone size and maximum allowable slope, and HeliOps-X1 suggests optimal landing zones on appropriate clearings or rooftops. Designed to evaluate HLZs even in hostile or complex terrain, HLZ surveys with HeliOps-X1 are now faster, safer, and fully digitized.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+     <!-- Feature Set 6 -->
+    <div class="feature-set">
+      <div class="feature-left">
+        <p>| 06</p>
+        <h2>Measurement Tools</h2>
+      </div>
+      <div class="feature-right">
+        <div class="feature-intro">
+          <p>Accurately measure distances, areas, angles and create custom drawings on-the-fly over the map to strengthen mission-critical analysis.</p>
+        </div>
+        <div class="feature-tabs">
+          <div class="feature-tab active" data-target="video">Video</div>
+          <div class="feature-tab" data-target="details">Details</div>
+        </div>
+        <div class="feature-card">
+          <video class="feature-video" autoplay loop muted playsinline>
+            <source src="assets/MTOOLX1.mp4" type="video/mp4">
+          </video>
+          <div class="feature-details">
+            <p>Accurately measure distances, areas, and angles on the map to strengthen mission-critical analysis. Draw routes, annotate landmarks, and create custom shapes or tactical overlays in real time. These tools empower precise reconnaissance, surveillance planning, and field documentation—ideal for marking enemy positions, HLZs, or movement corridors with pixel-level accuracy and actionable insights.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+     <!-- Feature Set 7 -->
+    <div class="feature-set">
+      <div class="feature-left">
+        <p>| 07</p>
+        <h2>Digital Elevation Mapping</h2>
+      </div>
+      <div class="feature-right">
+        <div class="feature-intro">
+          <p>HeliOps-X1's AI Route Planning tool intelligently suggests the
+most advantageous path from Point A to Point B. Routes are
+suggested based on maximum and minimum slope of terrain.</p>
+        </div>
+        <div class="feature-tabs">
+          <div class="feature-tab active" data-target="video">Video</div>
+          <div class="feature-tab" data-target="details">Details</div>
+        </div>
+        <div class="feature-card">
+          <video class="feature-video" autoplay loop muted playsinline>
+            <source src="assets/DEMX1.mp4" type="video/mp4">
+          </video>
+          <div class="feature-details">
+            <p>nce 3D model has been processed, users can drop routes,
+phase lines, and other maneuver mechanics right into the
+model. Operators can assess and then push planned routes into
+Ops devices. With LOS analysis, the route will be evaluated for
+enemy awareness, giving team leads the information necessary
+to move covertly through the battlefield.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+     <!-- Feature Set 8 -->
+    <div class="feature-set">
+      <div class="feature-left">
+        <p>| 08</p>
+        <h2>3D Models, Symbology & Cartography</h2>
+      </div>
+      <div class="feature-right">
+        <div class="feature-intro">
+          <p>HeliOps-X1's AI Route Planning tool intelligently suggests the
+most advantageous path from Point A to Point B. Routes are
+suggested based on maximum and minimum slope of terrain.</p>
+        </div>
+        <div class="feature-tabs">
+          <div class="feature-tab active" data-target="video">Video</div>
+          <div class="feature-tab" data-target="details">Details</div>
+        </div>
+        <div class="feature-card">
+          <video class="feature-video" autoplay loop muted playsinline>
+            <source src="assets/CARTOX1.mp4" type="video/mp4">
+          </video>
+          <div class="feature-details">
+            <p>nce 3D model has been processed, users can drop routes,
+phase lines, and other maneuver mechanics right into the
+model. Operators can assess and then push planned routes into
+Ops devices. With LOS analysis, the route will be evaluated for
+enemy awareness, giving team leads the information necessary
+to move covertly through the battlefield.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+     <!-- Feature Set 9 -->
+    <div class="feature-set">
+      <div class="feature-left">
+        <p>| 09</p>
+        <h2>Feild Of View</h2>
+      </div>
+      <div class="feature-right">
+        <div class="feature-intro">
+          <p>HeliOps-X1's AI Route Planning tool intelligently suggests the
+most advantageous path from Point A to Point B. Routes are
+suggested based on maximum and minimum slope of terrain.</p>
+        </div>
+        <div class="feature-tabs">
+          <div class="feature-tab active" data-target="video">Video</div>
+          <div class="feature-tab" data-target="details">Details</div>
+        </div>
+        <div class="feature-card">
+          <video class="feature-video" autoplay loop muted playsinline>
+            <source src="assets/FOVX1.mp4" type="video/mp4">
+          </video>
+          <div class="feature-details">
+            <p>nce 3D model has been processed, users can drop routes,
+phase lines, and other maneuver mechanics right into the
+model. Operators can assess and then push planned routes into
+Ops devices. With LOS analysis, the route will be evaluated for
+enemy awareness, giving team leads the information necessary
+to move covertly through the battlefield.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+     <!-- Feature Set 10 -->
+    <div class="feature-set">
+      <div class="feature-left">
+        <p>| 10</p>
+        <h2>Route Avoiding Feild of View</h2>
+      </div>
+      <div class="feature-right">
+        <div class="feature-intro">
+          <p>HeliOps-X1's AI Route Planning tool intelligently suggests the
+most advantageous path from Point A to Point B. Routes are
+suggested based on maximum and minimum slope of terrain.</p>
+        </div>
+        <div class="feature-tabs">
+          <div class="feature-tab active" data-target="video">Video</div>
+          <div class="feature-tab" data-target="details">Details</div>
+        </div>
+        <div class="feature-card">
+          <video class="feature-video" autoplay loop muted playsinline>
+            <source src="assets/RAFOVX1.mp4" type="video/mp4">
+          </video>
+          <div class="feature-details">
+            <p>nce 3D model has been processed, users can drop routes,
+phase lines, and other maneuver mechanics right into the
+model. Operators can assess and then push planned routes into
+Ops devices. With LOS analysis, the route will be evaluated for
+enemy awareness, giving team leads the information necessary
+to move covertly through the battlefield.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+     <!-- Feature Set 11 -->
+    <div class="feature-set">
+      <div class="feature-left">
+        <p>| 11</p>
+        <h2>Slope & Aspect Maps</h2>
+      </div>
+      <div class="feature-right">
+        <div class="feature-intro">
+          <p>HeliOps-X1's AI Route Planning tool intelligently suggests the
+most advantageous path from Point A to Point B. Routes are
+suggested based on maximum and minimum slope of terrain.</p>
+        </div>
+        <div class="feature-tabs">
+          <div class="feature-tab active" data-target="video">Video</div>
+          <div class="feature-tab" data-target="details">Details</div>
+        </div>
+        <div class="feature-card">
+          <video class="feature-video" autoplay loop muted playsinline>
+            <source src="assets/SLOPEX1.mp4" type="video/mp4">
+          </video>
+          <div class="feature-details">
+            <p>nce 3D model has been processed, users can drop routes,
+phase lines, and other maneuver mechanics right into the
+model. Operators can assess and then push planned routes into
+Ops devices. With LOS analysis, the route will be evaluated for
+enemy awareness, giving team leads the information necessary
+to move covertly through the battlefield.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+     <!-- Feature Set 12 -->
+    <div class="feature-set">
+      <div class="feature-left">
+        <p>| 12</p>
+        <h2>First Person View</h2>
+      </div>
+      <div class="feature-right">
+        <div class="feature-intro">
+          <p>HeliOps-X1's AI Route Planning tool intelligently suggests the
+most advantageous path from Point A to Point B. Routes are
+suggested based on maximum and minimum slope of terrain.</p>
+        </div>
+        <div class="feature-tabs">
+          <div class="feature-tab active" data-target="video">Video</div>
+          <div class="feature-tab" data-target="details">Details</div>
+        </div>
+        <div class="feature-card">
+          <video class="feature-video" autoplay loop muted playsinline>
+            <source src="assets/FPVX1.mp4" type="video/mp4">
+          </video>
+          <div class="feature-details">
+            <p>nce 3D model has been processed, users can drop routes,
+phase lines, and other maneuver mechanics right into the
+model. Operators can assess and then push planned routes into
+Ops devices. With LOS analysis, the route will be evaluated for
+enemy awareness, giving team leads the information necessary
+to move covertly through the battlefield.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+     <!-- Feature Set 13 -->
+    <div class="feature-set">
+      <div class="feature-left">
+        <p>| 13</p>
+        <h2>Live Videos from Diffrent Drones</h2>
+      </div>
+      <div class="feature-right">
+        <div class="feature-intro">
+          <p>HeliOps-X1's AI Route Planning tool intelligently suggests the
+most advantageous path from Point A to Point B. Routes are
+suggested based on maximum and minimum slope of terrain.</p>
+        </div>
+        <div class="feature-tabs">
+          <div class="feature-tab active" data-target="video">Video</div>
+          <div class="feature-tab" data-target="details">Details</div>
+        </div>
+        <div class="feature-card">
+          <video class="feature-video" autoplay loop muted playsinline>
+            <source src="assets/LIVEX1.mp4" type="video/mp4">
+          </video>
+          <div class="feature-details">
+            <p>nce 3D model has been processed, users can drop routes,
+phase lines, and other maneuver mechanics right into the
+model. Operators can assess and then push planned routes into
+Ops devices. With LOS analysis, the route will be evaluated for
+enemy awareness, giving team leads the information necessary
+to move covertly through the battlefield.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <script>
+
+    const allFeatureSets = document.querySelectorAll('.feature-set');
+
+    allFeatureSets.forEach(featureSet => {
+      const tabs = featureSet.querySelectorAll('.feature-tab');
+      const video = featureSet.querySelector('.feature-video');
+      const details = featureSet.querySelector('.feature-details');
+
+      tabs.forEach(tab => {
+        tab.addEventListener('click', () => {
+          tabs.forEach(t => t.classList.remove('active'));
+          tab.classList.add('active');
+
+          if (tab.dataset.target === 'video') {
+            video.style.display = 'block';
+            details.style.display = 'none';
+          } else {
+            video.style.display = 'none';
+            details.style.display = 'block';
+          }
+        });
+      });
+    });
+
+  </script>
+
+  <!-- CTA -->
+
+  <section id="join-us" class="hx1-cta" aria-labelledby="hx1-cta-title">
+    
+    <div class="hx1-cta__inner">
+  
+      <h3 id="hx1-cta-title" class="hx1-cta__heading" data-split>
+        Build Your Application?
+      </h3>
+  
+      <div class="hx1-cta__icon" aria-hidden="true" role="img">
+        <div class="platform-icon">
+          <div class="icon-placeholder">H1</div>
+        </div>
+      </div>
+  
+      <p class="hx1-cta__text">
+        Choose the Features of your choice and Start getting Insights from HeliOps-X1 as a Tactical Co-Pilot.
+      </p>
+  
+      <a class="hx1-cta__button" href="#careers" aria-label="Join HeliOps X1 careers">
+        Yes
+      </a>
+    </div>
+  </section>
+
+  <script>
+    (function () {
+      const el = document.querySelector('[data-split]');
+      if (!el) return;
+
+      const text = el.textContent;
+      el.textContent = '';
+
+      let index = 0;
+      for (const ch of text) {
+        const span = document.createElement('span');
+        span.className = 'char';
+        span.textContent = ch;
+        span.style.setProperty('--i', index);
+        if (ch === ' ') span.style.width = '0.35em';
+        el.appendChild(span);
+        index++;
+      }
+
+      const io = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            el.classList.add('in-view');
+            io.unobserve(el);
+          }
+        });
+      }, { threshold: 0.6 });
+
+      io.observe(el);
+    })();
+
+  </script>
+
+
+  <!-- Footer -->
+
+  <footer class="footer">
+    <hr style="margin-bottom: 50px;">
+    <div class="footer-container">
+
+      <!-- Left Column -->
+      <div class="footer-info">
+        <p>© 2025 Heli Defence Technologies Inc.<br>All rights reserved.</p>
+        <hr>
+        <p><a href="#">Cookies Settings</a></p>
+        <div class="social-links">
+          <a href="#">YOUTUBE</a>
+          <a href="#">X</a>
+          <a href="#">LINKEDIN</a>
+          <a href="#">GITHUB</a>
+        </div>
+      </div>
+
+      <!-- Right Columns -->
+      <div class="footer-links">
+        <!-- <div class="footer-column">
+          <h4>OFFERINGS</h4>
+          <a href="#">American Tech Fellowship</a>
+          <a href="#">Anti-Money Laundering</a>
+          <a href="#">Automotive & Mobility</a>
+          <a href="#">Data Protection</a>
+          <a href="#">Defense</a>
+          <a href="#">Energy</a>
+          <a href="#">Federal Health</a>
+          <a href="#">FedStart</a>
+          <a href="#">Financial Services</a>
+          <a href="#">Food & Beverage</a>
+          <a href="#">Heli Defence for Builders</a>
+        </div> -->
+
+        <!-- <div class="footer-column">
+          <h4>IMPACT STUDIES</h4>
+          <a href="#">Airbus</a>
+          <a href="#">Axel Springer</a>
+          <a href="#">Cleveland Clinic</a>
+          <a href="#">Concordance</a>
+          <a href="#">Doosan Infracore</a>
+          <a href="#">Fujitsu</a>
+          <a href="#">HHS & CDC</a>
+          <a href="#">Jacobs</a>
+          <a href="#">Kinder Morgan</a>
+          <a href="#">NHS</a>
+          <a href="#">Pacific Gas & Electric</a>
+        </div> -->
+
+        <div class="footer-column">
+          <h4>CAPABILITIES</h4>
+          <a href="#">AI + ML</a>
+          <a href="#">AIP for Developers</a>
+          <a href="#">Data Integration</a>
+          <a href="#">Digital Twin</a>
+          <a href="#">Dynamic Scheduling</a>
+          <a href="#">Edge AI</a>
+          <a href="#">Marketplace</a>
+          <a href="#">MetaConstellation</a>
+          <a href="#">Pipeline Builder</a>
+          <a href="#">Process Mining</a>
+          <a href="#">Real-Time Alerting</a>
+        </div>
+
+        <div class="footer-column">
+          <h4>DOCUMENTS</h4>
+          <a href="#">Developer Community</a>
+          <a href="#">Platform Documentation</a>
+          <a href="#">Heli Defence Developers</a>
+          <a href="#">Trust Center</a>
+          <a href="#">Cookies</a>
+          <a href="#">Privacy and Civil Liberties</a>
+          <a href="#">Heli Defence Explained</a>
+          <a href="#">Sustainability</a>
+          <a href="#">Human Rights Policy</a>
+          <a href="#">Privacy Statement</a>
+          <a href="#">Terms of Use</a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
+  <script>
+    AOS.init({
+      duration: 1000,
+      once: true,
+    });
+  </script>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
+  <script>
+    document.querySelectorAll('.platform-item').forEach(item => {
+      const imageUrl = item.getAttribute('data-image');
+      const icon = item.querySelector('.platform-icon');
+      icon.style.setProperty('--image-url', `url(${imageUrl})`);
+    });
+
+    // Dynamically set background image using CSS variable
+    const style = document.createElement('style');
+    style.innerHTML = `
+  .platform-icon::after {
+    background-image: var(--image-url);
+  }
+`;
+    document.head.appendChild(style);
+  </script>
+
+  <script>
+    // Hamburger Toggle
+    const hamburger = document.getElementById('hamburger');
+    const navMenu = document.getElementById('nav-menu');
+
+    hamburger.addEventListener('click', () => {
+      hamburger.classList.toggle('is-active');
+      navMenu.classList.toggle('active');
+    });
+
+    // Spanizer Animation
+    document.addEventListener('DOMContentLoaded', function () {
+      // Spanize the text
+      $(".js-spanize").each(function () {
+        var string = $(this).text();
+        var html = '';
+        for (var i = 0; i < string.length; i++) {
+          var char = string[i] === ' ' ? '&nbsp;' : string[i];
+          html += '<span style="animation-delay:' + (i * 0.03) + 's">' + char + '</span>';
+        }
+        $(this).html(html);
+      });
+
+      // Scroll Trigger Animation
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            const spans = entry.target.querySelectorAll('span');
+            spans.forEach(span => {
+              span.classList.add('animate');
+            });
+            observer.unobserve(entry.target); // Trigger only once
+          }
+        });
+      }, { threshold: 0.3 });
+
+      document.querySelectorAll('.js-spanize').forEach(el => observer.observe(el));
+    });
+  </script>
+
+</body>
+
+</html>

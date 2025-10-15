@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>HeliSimule-XR</title>
+  <link href="" rel="icon">
+  <link href="" rel="apple-touch-icon">
+
+  <link href="https://fonts.googleapis.com/css?family=Oswald:700|PT+Sans&display=swap" rel="stylesheet">
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/product_style.css" rel="stylesheet">
+
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+  <!-- Font -->
+  <link href="https://fonts.cdnfonts.com/css/airborne-86" rel="stylesheet">
+  <link href="https://fonts.cdnfonts.com/css/nodulus" rel="stylesheet">
+  <link href="https://fonts.cdnfonts.com/css/renegado" rel="stylesheet">
+  <link href="https://fonts.cdnfonts.com/css/zerpixl-volt" rel="stylesheet">
+  <link href="https://fonts.cdnfonts.com/css/nostromo" rel="stylesheet">
+  <link href="https://fonts.cdnfonts.com/css/modern-age" rel="stylesheet">
+  <link href="https://fonts.cdnfonts.com/css/mechfire" rel="stylesheet">
+
+</head>
+
+<body>
+
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="/" class="logo">
+        <img src="/assets/logo.png" alt="Logo">
+      </a>
+      <div class="hamburger" id="hamburger">
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+      </div>
+    </div>
+    <ul class="nav-links" id="nav-menu">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="HeliOps-X1.html">HeliOps-X1</a></li>
+      <li><a href="HeliOps-X2.html">HeliOps-X2</a></li>
+      <!-- <li><a href="HeliSimule-XR.html">HeliSimule-XR</a></li> -->
+      <li><a href="HeliHyper-XSI.html">HeliHyper-XSI</a></li>
+      <li><a href="HeliOps-XAD.html">HeliOps-XAD</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="hero">
+    <div class="texture"></div>
+    <video class="parallax-video" muted autoplay loop preload="auto" style="  filter: grayscale(100%) brightness(50%);">
+      <source src="/assets/Helisimule-XR_vid.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <div class="caption">
+      <h1>
+        <span>H</span><span>e</span><span>l</span><span>i</span><span>s</span><span>i</span><span>m</span><span>u</span><span>l</span><span>e</span><span>-</span><span>X</span><span>R</span>
+      </h1>
+
+    </div>
+  </section>
+
+<!-- About -->
+
+<div class="heliops-text" >
+  <h1 data-aos="fade-up" data-aos-duration="1000">Experience the Battlefeild in Virtual Reality</h1>
+  <!-- <p data-aos="fade-up" data-aos-duration="1200">The Helisimule-XR represents the future of advanced aerial operations, combining precision engineering with mission-focused innovation. Built to endure the harshest conditions, the X1 is equipped with state-of-the-art avionics, adaptive aerodynamics, and a modular framework that makes it versatile across a wide range of applications. From high-intensity defense missions and critical surveillance operations to rapid response deployments in challenging environments, the X1 delivers consistent performance and reliability where it matters most. Its real-time data integration and next-gen control systems empower operators with unmatched situational awareness, while enhanced safety protocols ensure maximum security during every mission. More than just an aircraft, the HeliOps X1 is a force multiplier—designed to redefine efficiency, elevate operational standards, and push the boundaries of what’s possible in heli-operations.</p> -->
+</div>
+
+  <section class="heliops-x1-scroll">
+    <div>
+      <video class="heliops-video" autoplay loop muted playsinline>
+        <source src="assets/Vid3.mp4" type="video/mp4">
+        Your browser does not support this video.
+      </video>
+    </div>
+  </section>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js"></script>
+  <script>
+    gsap.registerPlugin(ScrollTrigger);
+
+    gsap.to(".heliops-x1-scroll video", {
+      clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
+      width: "100vw",
+      height: "100vh",
+      ease: "none",
+      scrollTrigger: {
+        trigger: ".heliops-x1-scroll",
+        start: "top center",
+        end: "center center",
+        scrub: true
+      }
+    });
+  </script>
+
+
+  <!-- Feature Section -->
+
+  <section class="feature-section">
+  
+    <!-- Feature Set 1 -->
+    <div class="feature-set">
+      <!-- Left heading -->
+      <div class="feature-left">
+        <p>| 01</p>
+        <h2>Lorem Ipsum Feature 1</h2>
+      </div>
+  
+      <!-- Right content -->
+      <div class="feature-right">
+        <div class="feature-intro">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+        <div class="feature-tabs">
+          <div class="feature-tab active" data-target="video">Video</div>
+          <div class="feature-tab" data-target="details">Details</div>
+        </div>
+        <div class="feature-card">
+          <video class="feature-video" autoplay loop muted playsinline>
+            <source src="assets/feature.mp4" type="video/mp4">
+          </video>
+          <div class="feature-details">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Feature 1 details go here.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Feature Set 2 -->
+    <div class="feature-set">
+      <div class="feature-left">
+        <p>| 02</p>
+        <h2>Lorem Ipsum Feature 2</h2>
+      </div>
+      <div class="feature-right">
+        <div class="feature-intro">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+        <div class="feature-tabs">
+          <div class="feature-tab active" data-target="video">Video</div>
+          <div class="feature-tab" data-target="details">Details</div>
+        </div>
+        <div class="feature-card">
+          <video class="feature-video" autoplay loop muted playsinline>
+            <source src="assets/feature.mp4" type="video/mp4">
+          </video>
+          <div class="feature-details">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Feature 2 details go here.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Feature Set 3 -->
+    <div class="feature-set">
+      <div class="feature-left">
+        <p>| 03</p>
+        <h2>Lorem Ipsum Feature 3</h2>
+      </div>
+      <div class="feature-right">
+        <div class="feature-intro">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+        <div class="feature-tabs">
+          <div class="feature-tab active" data-target="video">Video</div>
+          <div class="feature-tab" data-target="details">Details</div>
+        </div>
+        <div class="feature-card">
+          <video class="feature-video" autoplay loop muted playsinline>
+            <source src="assets/feature.mp4" type="video/mp4">
+          </video>
+          <div class="feature-details">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Feature 3 details go here.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+  </section>
+
+  <script>
+
+    const allFeatureSets = document.querySelectorAll('.feature-set');
+
+    allFeatureSets.forEach(featureSet => {
+      const tabs = featureSet.querySelectorAll('.feature-tab');
+      const video = featureSet.querySelector('.feature-video');
+      const details = featureSet.querySelector('.feature-details');
+
+      tabs.forEach(tab => {
+        tab.addEventListener('click', () => {
+          tabs.forEach(t => t.classList.remove('active'));
+          tab.classList.add('active');
+
+          if (tab.dataset.target === 'video') {
+            video.style.display = 'block';
+            details.style.display = 'none';
+          } else {
+            video.style.display = 'none';
+            details.style.display = 'block';
+          }
+        });
+      });
+    });
+
+  </script>
+
+  <!-- CTA -->
+
+  <section id="join-us" class="hx1-cta" aria-labelledby="hx1-cta-title">
+    
+    <div class="hx1-cta__inner">
+  
+      <h3 id="hx1-cta-title" class="hx1-cta__heading" data-split>
+        Build Your Application?
+      </h3>
+  
+      <div class="hx1-cta__icon" aria-hidden="true" role="img">
+        <div class="platform-icon">
+          <div class="icon-placeholder">XR</div>
+        </div>
+      </div>
+  
+      <p class="hx1-cta__text">
+        Help shape Helisimule-XR and accelerate the future of aerial operations.
+      </p>
+  
+      <a class="hx1-cta__button" href="#careers" aria-label="Join HeliOps X1 careers">
+        Yes
+      </a>
+    </div>
+  </section>
+
+  <script>
+    (function () {
+      const el = document.querySelector('[data-split]');
+      if (!el) return;
+
+      const text = el.textContent;
+      el.textContent = '';
+
+      let index = 0;
+      for (const ch of text) {
+        const span = document.createElement('span');
+        span.className = 'char';
+        span.textContent = ch;
+        span.style.setProperty('--i', index);
+        if (ch === ' ') span.style.width = '0.35em';
+        el.appendChild(span);
+        index++;
+      }
+
+      const io = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            el.classList.add('in-view');
+            io.unobserve(el);
+          }
+        });
+      }, { threshold: 0.6 });
+
+      io.observe(el);
+    })();
+
+  </script>
+
+
+  <!-- Footer -->
+
+  <footer class="footer">
+    <hr style="margin-bottom: 50px;">
+    <div class="footer-container">
+
+      <!-- Left Column -->
+      <div class="footer-info">
+        <p>© 2025 Heli Defence Technologies Inc.<br>All rights reserved.</p>
+        <hr>
+        <p><a href="#">Cookies Settings</a></p>
+        <div class="social-links">
+          <a href="#">YOUTUBE</a>
+          <a href="#">X</a>
+          <a href="#">LINKEDIN</a>
+          <a href="#">GITHUB</a>
+        </div>
+      </div>
+
+      <!-- Right Columns -->
+      <div class="footer-links">
+        <!-- <div class="footer-column">
+          <h4>OFFERINGS</h4>
+          <a href="#">American Tech Fellowship</a>
+          <a href="#">Anti-Money Laundering</a>
+          <a href="#">Automotive & Mobility</a>
+          <a href="#">Data Protection</a>
+          <a href="#">Defense</a>
+          <a href="#">Energy</a>
+          <a href="#">Federal Health</a>
+          <a href="#">FedStart</a>
+          <a href="#">Financial Services</a>
+          <a href="#">Food & Beverage</a>
+          <a href="#">Heli Defence for Builders</a>
+        </div> -->
+
+        <!-- <div class="footer-column">
+          <h4>IMPACT STUDIES</h4>
+          <a href="#">Airbus</a>
+          <a href="#">Axel Springer</a>
+          <a href="#">Cleveland Clinic</a>
+          <a href="#">Concordance</a>
+          <a href="#">Doosan Infracore</a>
+          <a href="#">Fujitsu</a>
+          <a href="#">HHS & CDC</a>
+          <a href="#">Jacobs</a>
+          <a href="#">Kinder Morgan</a>
+          <a href="#">NHS</a>
+          <a href="#">Pacific Gas & Electric</a>
+        </div> -->
+
+        <div class="footer-column">
+          <h4>CAPABILITIES</h4>
+          <a href="#">AI + ML</a>
+          <a href="#">AIP for Developers</a>
+          <a href="#">Data Integration</a>
+          <a href="#">Digital Twin</a>
+          <a href="#">Dynamic Scheduling</a>
+          <a href="#">Edge AI</a>
+          <a href="#">Marketplace</a>
+          <a href="#">MetaConstellation</a>
+          <a href="#">Pipeline Builder</a>
+          <a href="#">Process Mining</a>
+          <a href="#">Real-Time Alerting</a>
+        </div>
+
+        <div class="footer-column">
+          <h4>DOCUMENTS</h4>
+          <a href="#">Developer Community</a>
+          <a href="#">Platform Documentation</a>
+          <a href="#">Heli Defence Developers</a>
+          <a href="#">Trust Center</a>
+          <a href="#">Cookies</a>
+          <a href="#">Privacy and Civil Liberties</a>
+          <a href="#">Heli Defence Explained</a>
+          <a href="#">Sustainability</a>
+          <a href="#">Human Rights Policy</a>
+          <a href="#">Privacy Statement</a>
+          <a href="#">Terms of Use</a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
+  <script>
+    AOS.init({
+      duration: 1000,
+      once: true,
+    });
+  </script>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
+  <script>
+    document.querySelectorAll('.platform-item').forEach(item => {
+      const imageUrl = item.getAttribute('data-image');
+      const icon = item.querySelector('.platform-icon');
+      icon.style.setProperty('--image-url', `url(${imageUrl})`);
+    });
+
+    // Dynamically set background image using CSS variable
+    const style = document.createElement('style');
+    style.innerHTML = `
+  .platform-icon::after {
+    background-image: var(--image-url);
+  }
+`;
+    document.head.appendChild(style);
+  </script>
+
+  <script>
+    // Hamburger Toggle
+    const hamburger = document.getElementById('hamburger');
+    const navMenu = document.getElementById('nav-menu');
+
+    hamburger.addEventListener('click', () => {
+      hamburger.classList.toggle('is-active');
+      navMenu.classList.toggle('active');
+    });
+
+    // Spanizer Animation
+    document.addEventListener('DOMContentLoaded', function () {
+      // Spanize the text
+      $(".js-spanize").each(function () {
+        var string = $(this).text();
+        var html = '';
+        for (var i = 0; i < string.length; i++) {
+          var char = string[i] === ' ' ? '&nbsp;' : string[i];
+          html += '<span style="animation-delay:' + (i * 0.03) + 's">' + char + '</span>';
+        }
+        $(this).html(html);
+      });
+
+      // Scroll Trigger Animation
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            const spans = entry.target.querySelectorAll('span');
+            spans.forEach(span => {
+              span.classList.add('animate');
+            });
+            observer.unobserve(entry.target); // Trigger only once
+          }
+        });
+      }, { threshold: 0.3 });
+
+      document.querySelectorAll('.js-spanize').forEach(el => observer.observe(el));
+    });
+  </script>
+
+</body>
+
+</html>
